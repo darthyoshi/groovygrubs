@@ -1,0 +1,300 @@
+/**
+ * Author: Kay Choi
+ * File: stylesheet.css
+ * Purpose: defines appearance of webpage elements
+ */
+
+html, body {
+    margin: 0;
+    padding: 5px;
+    background: #ffffff;
+    color: #000000;
+}
+
+#body {
+    margin: 0 auto;
+    width: 1100px;
+    overflow-y: scroll;
+}
+
+.cat {
+    width: 90%;
+    padding: 2%;
+}
+
+.cat li ul {
+    position: absolute;
+    left: 82%;
+    top: 0;
+    display: none;
+    width: 100%;
+}
+
+.cat li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.cat li:hover ul {
+    z-index: 1;
+    display: block;
+}
+
+#content {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    clear: both;
+}
+
+.column-1 {
+    float: left;
+    width: 230px;
+}
+
+.column-2 {
+    float: right;
+    width: 870px;
+}
+
+.column-2-1 {
+    float: left;
+    width: 630px;
+    padding-left: 5px;
+}
+
+.column-2-1-1 {
+	float: left;
+	width: 400px;
+    padding-left: 10px;
+
+}
+.column-2-1-2{
+	float: left;
+	width:340px;
+    padding-left: 10px;
+
+
+}
+
+.column-2-2 {
+    float: right;
+    width: 230px;
+}
+.column-2-3 {
+	float: right;
+    position: relative;
+    margin: auto;
+    width: 479px;
+
+}
+
+#footer {
+    text-align: center;
+    font-size: small;
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100px;
+}
+
+#login {
+    text-align: right;
+}
+
+#menu {
+    position: relative;
+    right: 65px;
+    height: 45px;
+    margin: 0;
+    width: 107%;
+}
+
+#menu li {
+    border: double black 3px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 2px;
+    width: 18%;
+}
+
+#menu li a {
+    display: block;
+}
+
+.topTen {
+    border: double 3px;
+    position: relative;
+    background: #ffffff;
+    margin: auto;
+    width: 90%;
+    height: 240px;
+}
+
+.topTen ol li {
+    height: 20px;
+}
+
+.memberInfo{
+    border: double 3px;
+    position: relative;
+    background: #ffffff;
+    margin: auto;
+    width: 40%;
+    height: 240px;
+
+
+}
+
+.truncate{
+ display:inline-block;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+ vertical-align: text-top;
+}
+
+ul li {
+    position: relative;
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+}
+
+/*Upload Column Styles*/
+/*Upload Header Styles*/
+#uploadHeader {
+    text-align: center;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 12px;
+}
+/*Upload Body Styles*/
+#uploadBody form ul {
+    list-style-type: none;
+}
+#uploadBody form {
+    overflow: auto;
+}
+#uploadBody .topLabel {
+    float:left;
+    width: 100%;
+}
+#uploadBody .formRow {
+    position: relative;
+    clear: both;
+    width: 100%;
+    margin: .5em;
+}
+#uploadBody form input, select {
+    clear: left;
+    margin: .5em .5em .5em 0;
+}
+#uploadBody form textarea {
+    width: 34em;
+    height: 8em;
+    resize: none;
+    overflow: auto;
+}
+/*browseColumn styles*/
+/*browseHeader styles*/
+/*browseBody styles*/
+#browseBody {
+    width: 100%;
+    float: left;
+    font-size: small;
+}
+#browseBody .browseRow {
+    width: 100%;
+    overflow: auto;
+    margin: 10px 0;
+    height: 150px;
+}
+#browseBody .browseRow p{
+    margin: .1em;
+    padding: .1em;
+}
+#browseBody .entry-image {
+    float: left;
+    margin: 0 10px 10px 0;
+    height: 120px;
+    width: 180px;
+    border: 1px solid black;
+}
+#browseBody .entry-title {
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+#browseBody .entry-data {
+    margin-top: .5em;
+}
+
+.rating {
+    float:left;
+    height:50px;
+    width:30%;
+    text-align:center;
+}
+
+/* :not(:checked) is a filter, so that browsers that donï¿½t support :checked donï¿½t
+follow these rules. Every browser that supports :checked also supports :not(), so
+it doesnï¿½t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:20px;
+    padding:0;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    height:20px;
+    background: url('../stargray.png') no-repeat;
+    position: relative;
+    right: 8px;
+}
+
+.rating > input:checked ~ label {
+    background: url('../starbright.png') no-repeat;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    background: url('../starblue.png') no-repeat;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    background: url('../starpale.png') no-repeat;
+}
+
+.star {
+    height: 20px;
+    width:20px;
+}

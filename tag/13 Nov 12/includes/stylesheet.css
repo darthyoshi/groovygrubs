@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    background: #cccccc;
+    color: #000000;
+}
+
+#body {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+#breadcrumbs {
+    position: relative;
+    left: -6%;
+}
+
+#breadcrumbs li {
+    font-size: small;
+    display: inline;
+}
+
+#breadcrumbs li a {
+    z-index: -1;
+}
+
+.cat {
+    padding: 2%;
+}
+
+.cat li ul {
+    position: absolute;
+    left: 82%;
+    top: 0;
+    display: none;
+    width: 100%;
+}
+
+.cat li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.cat li:hover ul {
+    z-index: 1;
+    display: block;
+}
+
+#content {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    clear: both;
+}
+
+.column-1 {
+    float: left;
+    width: 20%;
+}
+
+.column-2 {
+    float: right;
+    width: 80%;
+}
+
+.column-2-1 {
+    float: left;
+    width: 640px;
+    padding-left: 5px;
+}
+
+.column-2-2 {
+    float: right;
+    width: 230px;
+}
+
+#footer {
+    text-align: center;
+    font-size: small;
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100px;
+}
+
+#login {
+    text-align: right;
+}
+
+.topTen {
+    border: double 3px;
+    position: relative;
+    background: #ffffff;
+    margin: auto;
+    width: 90%;
+    height: 240px;
+}
+
+ul li {
+    position: relative;
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+}
